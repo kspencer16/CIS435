@@ -1,4 +1,26 @@
-<h1> Project 0 </h1>
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Project0</title>
+</head>
 
-This website will be going over a brief introduction of a class mate from CIS 435. The website will include a brief introduction of the classmate, their background, interests, and any other relevant information that will help others get to know them better.
+<body> 
+<h1>Quen's Profile</h1>
+<p>She goes by She/Her pronouns</p>
+<p>Her current major is Cybersecurity & Information Assurance</p>
+<p>with a focus in Digital Forensics!</p>
+
+<h2>What does she do outside of class?</h2>
+<p>Whenever Quen is not in class, she enjoys dancing and song writing!</p>
+
+<h2>What is Quen's favorite class so far and why?</h2>
+<p> Her favorite class was Forensic Science since she enjoyed the professor and it allowed her to get a deeper look into crime scene investigation.</p>
+
+<h2>What is the most interesting thing she has seen technology do?</h2>
+<p>She once witness someone on tiktok be able to show the laptop camera certain hand gestures, which when recognized, it would output the music note key she was gesturing at she by signaling.</p>
+
+<h2> Now you know more about Quen!</h2>
+</body>
+
+</html>
 
