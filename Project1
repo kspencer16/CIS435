@@ -1,1 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Hill</title>
+    <h1>Welcome to Silent Hill</h1>
+    
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/Project1?vscode-livepreview=true">Home</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Silent_Hill">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
