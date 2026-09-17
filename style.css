@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+/*banner*/
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-color: #152445;
+    background-image: url('./images/silenthillbanner.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    padding: 0px 15%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 40%;
+    height: 70px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    width: 90%;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.nav {
+    width: 45%;
+    height: 70px;
+    background-color: blue;
+}
+
+.nav-links{
+width: 100%;
+height: 70px;
+background-color: yellow;
+list-style-type: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-family: 'Roboto', sans-serif;
+font-weight: 350;
+}
