@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-
-
 </head>
-<body> 
+<body class="body"> 
     <!-- Banner Section -->
     <section class="banner">    
 
@@ -22,9 +20,9 @@
 
             <nav class="nav">
             <ul class="nav-links">
-                <li class-link>About</li>
-                <li class-link>Packages</li>
-                <li class-link>Contact</li>
+                <li class="nav-link">About</li>
+                <li class="nav-link">Packages</li>
+                <li class="nav-link">Contact</li>
             </ul>
             </nav>
 
@@ -34,13 +32,59 @@
         <!-- banner details -->
         <div class="banner-details">
 
+            <div class="badge">
+                Voted Best Thrill Seeking Destination
+            </div>
 
+            <h1 class="banner-heading"> 
+                See Silent Hill Like Never Before
+            </h1>
 
+            <button class="btn">
+                Explore Now
+            </button>
 
 
         </div>
 
     </section>
+
+
+    <!-- About Section -->
+     
+    <section class="about">
+   <span class="highlight">Silent Hill</span> is a mysterious American Resort Town located in the Northeastern United States. It is known for its foggy streets, abandoned buildings, and eerie atmosphere. The town has a dark history, with many legends and stories surrounding it. Visitors can explore the town's haunted locations, including the infamous Silent Hill Hospital and the abandoned amusement park. The town also offers guided tours and ghost hunting experiences for those seeking a thrill. Whether you're a fan of horror or just looking for an adventure, Silent Hill is a destination that will leave you with unforgettable memories.
+
+    </section>
+
+
+    <!-- Packages Section -->
+     <section class="packages">
+        <h2 class="section-heading">Our Packages</h2>
+        <div class="package-list">
+            <div class="package">
+                <div class="package-image">
+                    <img class="tour-image" src="images/town.jpg" alt="Haunted Tour">
+                <h3 class="package-title">Haunted Tour</h3>
+                <p class="package-description">Explore the most haunted locations in Silent Hill with our expert guides. Experience the thrill of ghost hunting and uncover the town's dark secrets.</p>
+                <button class="btn">Book Now</button>
+            </div>
+            <div class="package">
+                <img class="amusement-image" src="/images/amusement.jpg" alt="Amusement Park">
+                <h3 class="package-title">Abandoned Amusement Park</h3>
+                <p class="package-description">Visit the abandoned amusement park and witness the eerie remnants of a once-thriving attraction. Perfect for photography enthusiasts and thrill-seekers.</p>
+                <button class="btn">Book Now</button>
+            </div>
+            <div class="package">
+                <img class="hospital-image" src="/images/hospital.jpg" alt="Hospital">
+                <h3 class="package-title">Silent Hill Hospital Tour</h3>
+                <p class="package-description">Step inside the infamous Silent Hill Hospital and learn about its dark history. This guided tour will take you through the chilling corridors and reveal the stories behind its haunted past.</p>
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+
+     </section>
+
 
 
 

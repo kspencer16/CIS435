@@ -11,7 +11,6 @@
 
 }
 
-
 /*banner*/
 
 .banner {
@@ -21,23 +20,26 @@
     background-image: url('./images/silenthillbanner.jpeg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .header {
 
     width: 100%;
     height: 70px;
-    background-color: red;
     padding: 0px 15%;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+
 
 }
 
 .logo {
     width: 40%;
     height: 70px;
-    background-color: purple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,26 +47,143 @@
 
 .logo-text{
     width: 90%;
-    background-color: antiquewhite;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .nav {
     width: 45%;
     height: 70px;
-    background-color: blue;
 }
 
 .nav-links{
 width: 100%;
 height: 70px;
-background-color: yellow;
 list-style-type: none;
 display: flex;
 align-items: center;
 justify-content: space-between;
 font-family: 'Roboto', sans-serif;
 font-weight: 350;
+}
+
+.nav-link:hover{
+background-color: #454443;
+color: white;
+cursor: pointer;
+}
+.nav-link{
+    padding: 5px;
+    transition: .3s;
+}
+
+.banner-details{
+
+    width: 100%;
+    padding: 20px 15%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     row-gap: 50px;
+
+}
+
+.badge{
+
+width: max-content;
+padding: 10px 20px;
+background-color: rgba(68, 63, 63, 0.3);
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+border-radius: 5px;
+color: white;
+}
+
+
+.banner-heading{
+
+font-size: 35px;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+font-size: 37px;
+color: black;
+}
+
+.btn{
+
+    padding: 10px 10px;
+    font-size: 20px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+/*about section*/
+.about{
+
+width: 100%;
+padding: 50px 10%;
+background-color: white;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-weight: 250;
+word-spacing: 2px;
+
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+
+
+.section-heading{
+   width: max-content;
+padding: 10px 20px;
+background-color: rgba(9, 9, 9, 0.989);
+font-family: 'Roboto', sans-serif;
+font-size: 50px;
+border-radius: 5px;
+color: white;
+
+}
+
+.packages{
+    width: 100%;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+}
+
+.tour-image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.amusement-image{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 300px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.hospital-image{
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 5px;
+width: 300px;
+margin-top: 20px;
 }
