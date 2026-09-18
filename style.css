@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+html{
+scroll-behavior: smooth;
+}
 
 * {
 
@@ -78,7 +80,15 @@ background-color: #063b0f;
 color: white;
 cursor: pointer;
 }
-.nav-link{
+.nav-link1{
+    padding: 5px;
+    transition: .3s;
+}
+.nav-link2{
+    padding: 5px;
+    transition: .3s;
+}
+.nav-link3{
     padding: 5px;
     transition: .3s;
 }

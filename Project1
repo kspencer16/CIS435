@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
+
+
 </head>
 <body class="body"> 
     <!-- Banner Section -->
@@ -20,11 +22,9 @@
 
             <nav class="nav">
             <ul class="nav-links">
-                <li class="nav-link">About</li>
-                <li class="nav-link">Packages</li>
-                <li class="nav-link">Contact</li>
+                <button> />
             </ul>
-            </nav>
+           </nav>
 
         </header>
 
@@ -62,7 +62,7 @@
     <section class="packages">
 
         <h1 class="section-title">Our Packages</h1>
-        <p class="below">Below is a few different tours we offer!</p>
+        <p class="">Below is a few different tours we offer!</p>
         <div class="packages-area">
 
             <div class="town">
