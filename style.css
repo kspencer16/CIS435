@@ -53,7 +53,7 @@ scroll-behavior: smooth;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .nav {
@@ -75,23 +75,48 @@ font-size: 18px;
 word-spacing: 4px;
 }
 
-.nav-link:hover{
-background-color: #063b0f;
-color: white;
-cursor: pointer;
+.aboutbtn{
+    background-color: rgba(68, 63, 63, 0.6);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    align-items: center;
+    padding: 20px 20px;
 }
-.nav-link1{
-    padding: 5px;
-    transition: .3s;
+
+.packagesbtn{
+    background-color: rgba(68, 63, 63, 0.6);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    align-items: center;
+    padding: 20px 20px;
 }
-.nav-link2{
-    padding: 5px;
-    transition: .3s;
+
+.contactsbtn{
+    background-color: rgba(68, 63, 63, 0.6);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    align-items: center;
+    padding: 20px 20px;
 }
-.nav-link3{
-    padding: 5px;
-    transition: .3s;
+
+.contactsbtn:hover{
+    background-color: #063b0f;
 }
+
+.packagesbtn:hover{
+    background-color: #063b0f;
+}
+
+.aboutbtn:hover{
+    background-color: #063b0f;
+}
+
 
 .banner-details{
 
@@ -108,10 +133,10 @@ cursor: pointer;
 .badge{
 
 width: max-content;
-padding: 10px 20px;
+padding: 20px 20px;
 background-color: rgba(68, 63, 63, 0.8);
 font-family: 'Roboto', sans-serif;
-font-size: 14px;
+font-size: 20px;
 border-radius: 5px;
 color: white;
 }
@@ -119,10 +144,9 @@ color: white;
 
 .banner-heading{
 width: max-content;
-font-size: 35px;
+font-size: 80px;
 font-family: 'Roboto', sans-serif;
 font-weight: 600;
-font-size: 37px;
 color: white;
 }
 
@@ -137,15 +161,13 @@ color: white;
 
 /*about section*/
 .about{
-
 width: 100%;
-padding: 50px 10%;
-background-color: white;
+padding: 100px 10%;
+background-color: rgb(243, 243, 243);
 font-family: 'Roboto', sans-serif;
-font-size: 20px;
+font-size: 30px;
 font-weight: 250;
 word-spacing: 2px;
-
 }
 
 .highlight{
@@ -193,6 +215,7 @@ align-items: center;
 margin-top: 20px;
 font-size: 20px;
 font-family: 'Roboto', sans-serif;
+align-items: center;
 }
 
 
@@ -300,4 +323,156 @@ row-gap: 10px;
 height: 50px;
 width: 100%;
 font-size: 25px;
+}
+
+.contactpage{
+width: 100%;
+height: 700px;
+padding: 10px 0px;
+margin-top: 50px;
+display: flex;
+gap: 10px;
+flex-wrap: nowrap;
+background-color: #8f9ab3;
+
+
+.container{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+padding: 10px 10px;
+overflow: hidden;
+}
+
+.contact-box{
+    border-radius: 2em;
+    height: 400px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.left{
+    height: 100%;
+    background-image: url("images/welcomesign2.jpg");
+    background-size: cover;
+}
+
+.right{
+    padding: 40px 40px;
+}
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2:after{
+content: '';
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%);
+height: 5px;
+width: 100px;
+border-radius: 1em;
+background-color: rgba(6, 45, 10, 0.9);
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgb(168, 163, 163);
+    background-color: rgb(235, 233, 233);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s ease;
+    border-radius: 14px;
+    resize: none;
+}
+
+.field:hover{
+background-color: rgb(252, 252, 252);
+}
+
+.field:focus{
+    background-color: white;
+    border: 3px solid rgba(6, 45, 10, 0.9)
+}
+
+.submitbtn{
+width: 100%;
+padding: 1px 1px;
+font-size: 19px;
+background-color: rgb(235, 233, 233);
+border: 2px solid rgb(168, 163, 163);
+border-radius: 14px;
+cursor: pointer;
+color: black;
+font-weight: 700;
+letter-spacing: 1px;
+transition: .3s ease;
+}
+
+.submitbtn:hover{
+    background-color: rgba(6, 45, 10, 0.9);
+    color: white;
+}
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+}
+
+ul.menu{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 300px;
+    color:#152445;
+    position: relative;
+    cursor: pointer;
+}
+
+ul.menu li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu .submenu{
+    opacity: .5;
+    pointer-events; none;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    background-color: black;
+    padding: 1rem;
+    transition: all .3s ease;
+}
+
+/menu .submenu li{
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background .2s ease;
+
+}
+
+.menu .submenu li:nth-child(1){
+
 }

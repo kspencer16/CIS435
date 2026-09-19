@@ -20,11 +20,24 @@
                 <p class = "logo-text">Welcome to Silent Hill</p>
             </div>
 
-            <nav class="nav">
-            <ul class="nav-links">
-                <button> />
-            </ul>
+             <a href="#aboutinfo">
+            <nav class="nav-links">
+            <button class="aboutbtn">About</button>
            </nav>
+           </a>
+
+           <a href="#packagesinfo">
+            <nav class="nav-links">
+            <button class="packagesbtn">Packages</button>
+           </nav>
+           </a>
+
+           <a href="#contactinfo">
+            <nav class="nav-links">
+            <button class="contactsbtn">Contact</button>
+           </nav>
+           </a>
+
 
         </header>
 
@@ -52,17 +65,17 @@
 
     <!-- About Section -->
      
-    <section class="about">
+    <section class="about" id="aboutinfo">
    <span class="highlight">Silent Hill</span> is a mysterious American Resort Town located in the Northeastern United States. It is known for its foggy streets, abandoned buildings, and eerie atmosphere. The town has a dark history, with many legends and stories surrounding it. Visitors can explore the town's haunted locations, including the infamous Silent Hill Hospital and the abandoned amusement park. The town also offers guided tours and ghost hunting experiences for those seeking a thrill. Whether you're a fan of horror or just looking for an adventure, Silent Hill is a destination that will leave you with unforgettable memories.
 
     </section>
 
 
     <!-- Packages Section -->
-    <section class="packages">
+    <section class="packages" id="packagesinfo">
 
         <h1 class="section-title">Our Packages</h1>
-        <p class="">Below is a few different tours we offer!</p>
+        <p class="below">Below is a few different tours we offer!</p>
         <div class="packages-area">
 
             <div class="town">
@@ -116,6 +129,41 @@
         </div>
 
     </section>
+
+<!-- Contact Section -->
+ <section class="contactpage" id="contactinfo">
+<div class="container"> 
+    <div class="contact-box"> 
+        <div class="left">   
+        </div>
+        <div class="right"> 
+            <h2>Contact Us</h2>
+            <input type="text" class="field" placeholder="Your Name">
+            <input type="email" class="field" placeholder="Your Email">
+            <ul class="menu">
+                <li>
+                   <p>Package Selection</p> 
+                   <img src="./images/arrow2.png" alt="down arrow">
+                    <ul class="submenu"> 
+                        <li>Haunted Town Tour</li>
+                        <li>Amusement Park Tour</li>
+                        <li>Silent Hill Hospital Tour</li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <textarea class="field" placeholder="Additional Comments"></textarea>
+            <button class="submitbtn">Submit Info</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+ </section>
+
 
 
 
