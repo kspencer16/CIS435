@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Project1</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-
 
 </head>
 <body class="body"> 
@@ -45,17 +43,13 @@
         <!-- banner details -->
         <div class="banner-details">
 
-            <div class="badge">
-                Voted Best Thrill Seeking Destination
-            </div>
-
             <h1 class="banner-heading"> 
                 See Silent Hill Like Never Before
             </h1>
 
-            <button class="btn">
-                Explore Now
-            </button>
+               <div class="badge">
+                Voted Best Thrill Seeking Destination
+            </div>
 
 
         </div>
@@ -89,7 +83,9 @@
                         Explore the most haunted locations in Silent Hill with our expert guides. Experience the thrill of ghost hunting and uncover the town's dark secrets.
                     </p>
                     <button class="townbtn">
+                        <a href="#contactinfo">
                         Book Now
+                        </a>
                     </button>
                 </div>
 
@@ -106,7 +102,9 @@
                         Visit the abandoned amusement park and witness the eerie remnants of a once-thriving attraction. Perfect for photography enthusiasts and thrill-seekers.
                     </p>
                     <button class="amusementbtn">
+                        <a href="#contactinfo">
                         Book Now
+                        </a>
                     </button>
                 </div>
             </div>
@@ -122,7 +120,9 @@
                         Step inside the infamous Silent Hill Hospital and learn about its dark history. This guided tour will take you through the chilling corridors and reveal the stories behind its haunted past.
                     </p>
                     <button class="hospitalbtn">
+                        <a href="#contactinfo">
                         Book Now
+                        </a>
                     </button>
                 </div>
 
@@ -138,32 +138,35 @@
         </div>
         <div class="right"> 
             <h2>Contact Us</h2>
-            <input type="text" class="field" placeholder="Your Name">
-            <input type="email" class="field" placeholder="Your Email">
-            <ul class="menu">
-                <li>
-                   <p>Package Selection</p> 
-                   <img src="./images/arrow2.png" alt="down arrow">
-                    <ul class="submenu"> 
-                        <li>Haunted Town Tour</li>
-                        <li>Amusement Park Tour</li>
-                        <li>Silent Hill Hospital Tour</li>
-                    </ul>
-                </li>
-            </ul>
+            <input type="text" class="field" placeholder="-- Your Name --">
+            <input type="email" class="field" placeholder="-- Your Email --">
 
+        <div class="dropdown">
+            <select id="reason" name="reason" required class="test">
+                <option value="disabled selected" >-- Package Options --</option>
+                <option value="town">Haunted Town Tour</option>
+                <option value="amusement">Amusement Park Tour</option>
+                <option value="hospital">Silent Hill Hospital Tour</option>
+                <option value="multiple">Multiple: Specify In Comment Area</option>
+            </select>
+        </div>
 
-            <textarea class="field" placeholder="Additional Comments"></textarea>
+            <textarea class="field" placeholder="-- Additional Comments --"></textarea>
             <button class="submitbtn">Submit Info</button>
         </div>
     </div>
 </div>
-
-
-
-
  </section>
 
+
+ <footer>
+  <p>Author: Kileigh Spencer</p>
+  <p><a href="mailto:kileigh@umich.edu">kileigh@umich.edu</a></p>
+   <a href="#aboutinfo">#About</a>
+   <a href="#packagesinfo">#Packages</a>
+   <a href="#contactinfo">#Contacts</a>
+
+</footer>
 
 
 

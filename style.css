@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 html{
 scroll-behavior: smooth;
 }
@@ -35,8 +34,6 @@ scroll-behavior: smooth;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-
-
 }
 
 .logo {
@@ -69,7 +66,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 font-family: 'Roboto', sans-serif;
-font-weight: 500px;
+font-weight: 500;
 color: #063b0f;
 font-size: 18px;
 word-spacing: 4px;
@@ -93,6 +90,7 @@ word-spacing: 4px;
     font-size: 30px;
     align-items: center;
     padding: 20px 20px;
+   
 }
 
 .contactsbtn{
@@ -117,45 +115,35 @@ word-spacing: 4px;
     background-color: #063b0f;
 }
 
-
 .banner-details{
-
     width: 100%;
-    padding: 20px 15%;
+    padding: 20px;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 50px;
+}
 
+.banner-heading{
+width: 100%;
+margin-top:80px;
+font-size: clamp(2rem, 6vw, 5rem);
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+color: white;
+text-align: center;
 }
 
 .badge{
-
-width: max-content;
+width: 100%;
 padding: 20px 20px;
 background-color: rgba(68, 63, 63, 0.8);
 font-family: 'Roboto', sans-serif;
 font-size: 20px;
 border-radius: 5px;
 color: white;
-}
-
-
-.banner-heading{
-width: max-content;
-font-size: 80px;
-font-family: 'Roboto', sans-serif;
-font-weight: 600;
-color: white;
-}
-
-.btn{
-
-    padding: 10px 10px;
-    font-size: 20px;
-    background-color: white;
-    cursor: pointer;
+text-align: center;
 
 }
 
@@ -202,7 +190,6 @@ align-items: center;
 
 
 .section-title{
-    font-size: 30px;
     padding: 20px 20px;
     background-color: rgba(6, 45, 10, 0.9);
     font-family: 'Roboto', sans-serif;
@@ -225,7 +212,20 @@ padding: 10px 0px;
 margin-top: 50px;
 display: flex;
 gap: 10px;
-flex-wrap: nowrap;
+flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+
+    .packages-area{
+        flex-direction: column;
+    }
+
+    .town,
+    .amusement,
+    .hospital{
+        width: 100%;
+    }
 }
 
 
@@ -245,13 +245,14 @@ overflow: hidden;
 .town-image{
 width: 100%;
 height: 220px;
+object-fit: cover;
 }
 
 .town-details{
 padding: 10px;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 row-gap: 10px;
 }
 
@@ -277,13 +278,14 @@ overflow: hidden;
 .amusement-image{
 width: 100%;
 height: 220px;
+object-fit: cover;
 }
 
 .amusement-details{
 padding: 10px;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 row-gap: 10px;
 }
 
@@ -309,13 +311,14 @@ overflow: hidden;
 .hospital-image{
 width: 100%;
 height: 220px;
+object-fit: cover;
 }
 
 .hospital-details{
 padding: 10px;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 row-gap: 10px;
 }
 
@@ -325,18 +328,26 @@ width: 100%;
 font-size: 25px;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .contactpage{
 width: 100%;
-height: 700px;
+min-height: 700px;
+height: auto;
 padding: 10px 0px;
 margin-top: 50px;
 display: flex;
 gap: 10px;
 flex-wrap: nowrap;
-background-color: #8f9ab3;
-
+background-color: rgb(243, 243, 243);
+}
 
 .container{
+margin-top: 75px;
 position: relative;
 display: flex;
 align-items: center;
@@ -349,7 +360,7 @@ overflow: hidden;
 
 .contact-box{
     border-radius: 2em;
-    height: 400px;
+    min-height: 500px;
     max-width: 850px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -362,7 +373,10 @@ overflow: hidden;
 .left{
     height: 100%;
     background-image: url("images/welcomesign2.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2em;
 }
 
 .right{
@@ -428,6 +442,35 @@ transition: .3s ease;
     color: white;
 }
 
+/*.dropdown{
+     width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgb(168, 163, 163);
+    background-color: rgb(235, 233, 233);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s ease;
+    border-radius: 14px;
+    resize: none;
+}*/
+.test{
+     width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgb(168, 163, 163);
+    background-color: rgb(235, 233, 233);
+    color: rgb(107, 107, 107);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s ease;
+    border-radius: 14px;
+    resize: none;
+}
+.test:hover{
+background-color: rgb(252, 252, 252);
+}
+
 @media screen and (max-width:880px){
     .contact-box{
         grid-template-columns: 1fr;
@@ -437,42 +480,72 @@ transition: .3s ease;
     }
 }
 
-ul.menu{
-    margin-top: 50px;
-    width: 100%;
-    max-width: 300px;
-    color:#152445;
-    position: relative;
-    cursor: pointer;
+
+footer {
+width: 100%;
+margin: 5px;
+min-height: 100px;
+font-size: 20px;
+text-align: center;
+padding: 15px 15px;
+background-color: rgb(253, 255, 255);
+color: black;
 }
 
-ul.menu li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+footer a{
+    margin: 0 10px;
 }
 
-.menu .submenu{
-    opacity: .5;
-    pointer-events; none;
-    position: absolute;
-    top: 2%;
-    left: 0%;
-    background-color: black;
-    padding: 1rem;
-    transition: all .3s ease;
+@media screen and (max-width: 768px){
+    .banner{
+        min-height: 100vh;
+        height: auto;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo-text{
+        font-size: 22px;
+    }
+
+    .aboutbtn,
+    .packagesbtn,
+    .contactsbtn{
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 150px;
+    }
 }
+@media screen and (max-width: 480px){
 
-/menu .submenu li{
-    color: white;
-    padding: 1rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    transition: background .2s ease;
+    .banner-heading{
+        font-size: 30px;
+    }
 
-}
+    .about{
+        font-size: 20px;
+        padding: 50px 5%;
+    }
 
-.menu .submenu li:nth-child(1){
+    .section-title{
+        font-size: 30px;
+    }
 
+    .below{
+        text-align: center;
+    }
+
+    footer{
+        font-size: 16px;
+        height: auto;
+    }
 }
